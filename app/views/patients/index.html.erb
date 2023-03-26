@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card row">
+    <% @patients.each do |patient| %>
+      <%= link_to patient_path(patient) do %>
+        <div class="card col-4 p-4 m-3">
+          <h6><%= patient.first_name %><%= patient.last_name %></h6>
+          <p><%= patient.gender %></p>
+          <p><%= patient.price %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
