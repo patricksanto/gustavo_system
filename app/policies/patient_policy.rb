@@ -11,6 +11,14 @@ class PatientPolicy < ApplicationPolicy
   end
 
   def create?
-    true
+    user.admin?
+  end
+
+  def edit?
+    update?
+  end
+
+  def update?
+    user.admin?
   end
 end

@@ -2,5 +2,7 @@
   <div class="card p-4 m-4">
     <h4><%= @patient.first_name %></h4>
     <h6><%= @patient.last_name %></h6>
+    <p><%= @patient.price %></p>
+    <%= link_to 'Edit patient', edit_patient_path(@patient) %>
   </div>
 </div>
