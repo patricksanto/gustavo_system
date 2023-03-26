@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="card m-4 p-4 text-center">
+    <h2>Mostrar todos pacientes</h2>
+    <%= link_to "Todos pacientes", patients_path, class: " btn btn-primary" %>
+    <h2>Cadastrar Novo Paciente</h2>
+    <%= link_to "Create a new patient", new_patient_path, class: 'btn btn-primary'%>
+  </div>
+</div>
