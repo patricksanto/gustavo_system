@@ -78,3 +78,5 @@ group :test do
 end
 
 gem 'pundit'
+
+gem 'simple_calendar', '~> 2.4', '>= 2.4.3'
